@@ -24,6 +24,7 @@ public class ConjureTemplateParser{
     }
 
     private void registerStandardTypes() {
+        template.addNodeType("UDID", UDID.class);
         template.addNodeType("time", TimeNode.class);
         template.addNodeType("minmax", MinMaxNode.class);
         template.addNodeType("randomChoice", ChooseRandomNodeList.class);
